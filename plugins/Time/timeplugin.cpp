@@ -76,7 +76,7 @@ TimePlugin::TimePlugin() : mApp( 0 )
 
 	static QTranslator		Translator;
 
-	if( Translator.load( QLocale(), QLatin1String( "translations" ), QLatin1String( "_" ), ":/" ) )
+	if( Translator.load( QLocale(), QLatin1String( "translations" ), QLatin1String( "_" ), QLatin1String(),QLatin1String(".qm") ) )
 	{
 		qApp->installTranslator( &Translator );
 	}
